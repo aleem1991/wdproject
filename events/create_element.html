@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="dynamicList">
+        <li>Item1</li>
+    <li>Item2</li>
+    </ul>
+    <button onclick="addItem()" > Add item</button>
+<script>
+    function addItem() {
+        const dynamicList=document.getElementById('dynamicList');
+        const newitem= document.createElement('li');
+        newItem.textContent='New Item';
+        dynamicList.appendChild(newItem);    
+    }
+</script>
+</body>
+</html>
